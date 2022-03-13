@@ -1,3 +1,10 @@
+type Client{
+    address: String
+    clientName: String
+    ClientID: String
+    gst: String
+}
+
 type Query{
-    helloWorld: String
+    getClient: Client
 }
