@@ -2,12 +2,7 @@ package com.application.RMSecurity.model;
 
 import lombok.*;
 
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
-@ToString
-@EqualsAndHashCode
+@Data
 public class Client {
     public String address;
     public String clientName;

@@ -6,5 +6,5 @@ type Client{
 }
 
 type Query{
-    getClient: Client
+    getClient(id: Int): Client
 }
