@@ -17,6 +17,9 @@ public class ClientQueryGraphql implements GraphQLQueryResolver {
     public String helloWorld(){
         return "hello world";
     }
+    public ClientData getClientData(int id){
+        return clientService.getClient(id).get(0);
+    }
     public Client getClient(int id){
         ClientData clientData = clientService.getClient(id).get(0);
         System.out.println(clientData);

@@ -5,6 +5,16 @@ type Client{
     gst: String
 }
 
+type ClientData{
+    clientId: Int
+    name: String
+    address: String
+    gst: String
+    active: Boolean
+}
+
 type Query{
     getClient(id: Int): Client
+    getClientData(id: Int): ClientData
+
 }
